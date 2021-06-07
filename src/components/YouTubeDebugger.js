@@ -10,13 +10,8 @@ export default function() {
         }
       });
 
-  handleChangeBitrate = () => {
-    this.setState({
-      settings: {
-        ...this.state.settings,
-        bitrate: 12
-      }
-    });
+  const handleChangeBitrate = () => {
+      setSettings({...settings,bitrate:12})
   };
 
   handleChangeResolution = () => {
