@@ -14,16 +14,9 @@ export default function() {
       setSettings({...settings,bitrate:12});
   };
 
-  handleChangeResolution = () => {
-    this.setState({
-      settings: {
-        ...this.state.settings,
-        video: {
-          ...this.state.settings.video,
-          resolution: '720p'
-        }
-      }
-    });
+ const handleChangeResolution = () => {
+   setSettings({...settings,video:{resolution:"720p"}})
+ }
 
   render() {
     return (
