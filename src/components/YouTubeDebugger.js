@@ -11,7 +11,7 @@ export default function() {
       });
 
   const handleChangeBitrate = () => {
-      setSettings({...settings,bitrate:12})
+      setSettings({...settings,bitrate:12});
   };
 
   handleChangeResolution = () => {
