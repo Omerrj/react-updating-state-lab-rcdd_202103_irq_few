@@ -2,6 +2,13 @@ import React,{useState} from 'react';
 
 export default function() {
   const [errors,setErrors]=useState([])
+  const [user,setUser]=useState(null)
+  const [settings,setSettings]=useState({
+        bitrate: 8,
+        video: {
+          resolution: '1080p'
+        }
+      })
   constructor() {
     super();
 
