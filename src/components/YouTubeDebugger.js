@@ -18,18 +18,15 @@ export default function() {
    setSettings({...settings,video:{resolution:"720p"}})
  }
 
-  render() {
     return (
       <div>
-        <button className="bitrate" onClick={this.handleChangeBitrate}>
+        <button className="bitrate" onClick={handleChangeBitrate}>
           Change bitrate
         </button>
-        <button className="resolution" onClick={this.handleChangeResolution}>
+        <button className="resolution" onClick={handleChangeResolution}>
           Change resolution
         </button>
       </div>
     );
-  }
+  
 }
-
-export default YouTubeDebugger;
