@@ -8,21 +8,7 @@ export default function() {
         video: {
           resolution: '1080p'
         }
-      })
-  constructor() {
-    super();
-
-    this.state = {
-      errors: [],
-      user: null,
-      settings: {
-        bitrate: 8,
-        video: {
-          resolution: '1080p'
-        }
-      }
-    };
-  }
+      });
 
   handleChangeBitrate = () => {
     this.setState({
